@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/* to style background */
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(#42275a,#734b6d);
+    flex-direction:column;
+  
+}
+/* for styling heading of app */
+.heading p{
+    color: #ffffff;
+    font-size:50px;
+    font-weight: 600;
+    margin-bottom:30px; 
+}
+
+/* to style main-content area */
+.box {
+    overflow-y:scroll;
+    position: relative;
+    width: 700px;
+    min-height: 10px;
+    max-height: 400px;
+    background-color: white;
+    border-radius: 5px 5px  0 0;
+    padding: 15px;
+}
+/* for disappearing scroll bar */
+.box::-webkit-scrollbar{
+    display:none;
+}
+#input-field-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* hover effect while hovering on text area */
+.box #item:hover{
+    box-shadow: 0 0 1px 2px grey;
+ }
+ /* giving position to add(plus) button */
+#add{
+    position: absolute;
+    right: 25px;
+}
+/* hovering effect to add task button */
+.fa-solid:hover{
+    transform:translateY(-3px);
+    box-shadow: 0px 5px 10px rgba(0,0,0, 0.2);
+    transition:all 0.5s ease-in-out;
+}
+
+/* styling the inputtext area  */
+#item {
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    display: block;
+    font-weight: bold;
+    box-shadow: 0px 0px 2px grey;
+}
+
+#to-do-box {
+    margin-top: 20px;
+    list-style: none;
+}
+/* to style the tasks added in the list item */
+#to-do-box li {
+    position: relative;
+    background-color: #4ba055;
+    color: white;
+    padding: 10px;
+    border-radius:4px;
+    padding-right: 30px;
+    text-align: justify;
+    margin-top: 10px;
+    user-select: none;
+    font-weight: 600;
+}
+/* positioning the delete button */
+#to-do-box li i {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+/* hovering effect to delete button */
+.fas:hover{
+    transform:translateY(-3px);
+    box-shadow: 0px 5px 10px rgba(0,0,0, 0.2);
+    transition:all 0.5s ease-in-out;
+}
+/* styling the list item when the task is done */
+.done {
+    text-decoration: line-through;
+    color: black;
+    background-color: #95a5a6 !important;
+}
+/* stlyling the task left area(div) */
+.total-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:700px;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    border-top: 1px solid grey;
+}
+.total-div  p{
+    position: relative;
+    padding:10px;
+    font-size: 17px;
+    font-weight: 600;
+    user-select: none;
+}
+/*  to make add task button invisible initially  */
+.hide {
+    display: none !important;
+  }
+
+
+@media (max-width:992px) {
+    .box{
+        width:70%;
+    }
+    .total-div{
+        width:70%;
+    }
+}

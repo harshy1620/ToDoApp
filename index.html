@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <main>
+     <!-- div for heading-------------->
+      <div class="heading">
+         <p> Todo App</p> 
+      </div>
+     <!-- div for main content---------->
+     <div class="box">
+          <div id="input-field-div">
+              <input type="text" id="item" autofocus placeholder="Write your task here..." >
+              <i class="fa-solid fa-circle-plus hide"  id="add"></i>
+          </div>
+          <!-- this tag is for ToDo work items -->
+            <ul id="to-do-box">
+            </ul>
+      </div>
+      <!-- this div is for task left counting -->
+        <div class="total-div">
+            <p> Tasks left : </p><p id="total">0</p>
+        </div>
+</main>
+<script src="https://kit.fontawesome.com/16fcd17eb5.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
