@@ -3,8 +3,6 @@ Project  ToDoApp
 https://harshy1620.github.io/ToDoApp/
 click on the above link to see the live preview of my project
 
-# Todo App
-
 This GitHub repository contains the source code for a Todo app, developed using HTML, CSS, and JavaScript. The app provides basic functionality for managing a list of tasks.
 
 ## Project Overview
